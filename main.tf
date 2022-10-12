@@ -1,11 +1,11 @@
 data "azuread_client_config" "current" {}
 
 resource "azuread_group" "TestADGroup" {
-    display_name     = "TestADGroup"
-    #owners           = ["699e22cd-2f38-4f0f-a650-dd5a66233927"]
-    #owners           = ["9314f37f-cc4f-4c0d-a45a-993076af52f6"]
-    security_enabled = true
-  }
+  display_name     = "TestADGroup"
+  #owners           = ["699e22cd-2f38-4f0f-a650-dd5a66233927"]
+  #owners           = ["9314f37f-cc4f-4c0d-a45a-993076af52f6"]
+  security_enabled = true
+}
 
 resource "azurerm_role_assignment" "grouprole" {
   name               = "00000000-0000-0000-0000-000000000000"
