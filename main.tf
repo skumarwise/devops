@@ -32,3 +32,4 @@ resource "azurerm_role_assignment" "grouprole" {
   role_definition_id = "/subscriptions/0645382c-85c1-4895-83f2-1a4bb2b7a29b/providers/Microsoft.Authorization/roleDefinitions/a97b65f3-24c7-4388-baec-2e87135dc908"
   principal_id       = azuread_group.TestADGroup.id
 }
+
